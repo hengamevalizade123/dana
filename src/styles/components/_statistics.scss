@@ -1,0 +1,17 @@
+.c-statistics {
+	padding: 38px 60px;
+	background-image: url("../images/bg-statistics.png");
+	border: 4px solid #D1913C;
+	border-radius: 8px;
+	li{
+		list-style: none;
+		color: var(--color-white);
+		flex: 1;
+		strong{
+			@include font-size(40px,1.6);
+		}
+		span{
+			@include font-size(20px,1.6);
+		}
+	}
+}
