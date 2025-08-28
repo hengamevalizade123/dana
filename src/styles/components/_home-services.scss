@@ -1,0 +1,37 @@
+.c-section--home-services{
+	margin-top: 3.375em;
+}
+.c-home-services {
+	ul {
+		gap: 40px;
+
+		li {
+			flex: 1;
+			list-style: none;
+			background: linear-gradient(90deg, #492464 0%, #960096 100%);
+			border-radius: 8px;
+			padding: 28px 40px;
+			display: flex;
+			flex-direction: column;
+			gap: 26px;
+			justify-content: space-between;
+
+			h3 {
+				@include font-size(28px, 1);
+				margin: 0;
+			}
+		}
+
+		p {
+			margin: 0;
+			@include font-size(18px,1.8);
+		}
+		a{
+			@include font-size(18px,1);
+			text-decoration: none;
+			padding: 12px 28px;
+			border-radius: 8px;
+			border: 1px solid var(--color-white);
+		}
+	}
+}

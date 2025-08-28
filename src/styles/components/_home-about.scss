@@ -1,0 +1,31 @@
+.c-home-about{
+	gap: 46px;
+	h2{
+		@include font-size(28px,1.6);
+		color: #492464;
+	}
+	p{
+		@include font-size(16px,1.8);
+	}
+	a{
+		@include font-size(18px,1.8);
+		color: #D1913C;
+		border: 1px solid #D1913C;
+		border-radius: 4px;
+		text-decoration: none;
+		padding: 8px 18px;
+		display: block;
+		text-align: center;
+	}
+	&__txt{
+		flex: 1.25;
+	}
+	&__media{
+		flex: 1;
+	}
+	img{
+		height: 100%;
+		object-fit: cover;
+		border-radius: 4px;
+	}
+}

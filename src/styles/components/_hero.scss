@@ -1,0 +1,111 @@
+.c-hero {
+	&__slider {
+		height: 464px;
+		position: relative;
+
+		&:before {
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			background: rgb(0 0 0 / 50%);
+			z-index: 0;
+		}
+
+		h2 {
+			@include font-size(56px, 1.6);
+			margin: 0;
+		}
+
+		.c-slider-main p {
+			@include font-size(24px, 1.6);
+			margin: 8px 0;
+		}
+	}
+	&__counseling{
+	margin-bottom: -100px;
+}
+	&__counseling-txt {
+		background: #492464;
+		border: 5px solid var(--color-white);
+		padding: 18px;
+		@include font-size(18px, 1.6);
+		width: 20%;
+		box-shadow: 5px 4px 4px 4px rgb(0 0 0 / 25%);
+		z-index: 3;
+	}
+
+	&__counseling-form {
+		width: 80%;
+		background: #492464;
+		padding: 12px 24px;
+		box-shadow: 0 4px 4px 4px rgb(0 0 0 / 25%);
+		border: 3px solid var(--color-white);
+		border-right: 0;
+		z-index: 2;
+		form {
+			gap: 8px;
+label{
+	@include font-size(14px, 1.6);
+}
+			div {
+				display: flex;
+				flex-direction: column;
+				gap: 8px;
+				flex: 1;
+			}
+		}
+
+		input, select {
+			width: 100%;
+			border-radius: 4px;
+			border: 0;
+			outline: none;
+			@include font-size(14px, 1);
+			padding:6px 8px;
+			color: #9999A1;
+			max-width: 185px;
+			box-sizing: border-box;
+			text-align: right;
+		}
+		button{
+			height: 38px;
+			border-radius: 4px;
+			box-sizing: border-box;
+			border: 0;
+			@include font-size(15px,1.6);
+			color: #492464;
+			background: #FFC300;
+			font-weight: bold;
+		}
+	}
+
+	.c-slider-content {
+		z-index: 1;
+	}
+
+	.c-slider-main {
+		padding-top: 240px;
+	}
+}
+
+.flickity-button.previous {
+	background: url('data:image/svg+xml,<svg width="29" height="40" viewBox="0 0 29 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.00019455 19.7897L14.8961 0H27.9152L13.0193 19.7897L27.9152 39.6867L28.2285 40H15.2094L14.8961 39.6867L0.00019455 19.7897Z" fill="white"/></svg>') no-repeat;
+	background-size: contain;
+}
+
+.flickity-button.next {
+	background: url('data:image/svg+xml,<svg width="29" height="40" viewBox="0 0 29 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M28.2283 20.2103L13.3324 40H0.313272L15.2092 20.2103L0.313272 0.313272L0 0H13.0191L13.3324 0.313272L28.2283 20.2103Z" fill="white"/></svg>') no-repeat;
+	background-size: contain;
+}
+
+.flickity-button {
+	height: 26px;
+	width: 26px;
+
+	svg {
+		display: none;
+	}
+}
