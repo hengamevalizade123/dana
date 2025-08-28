@@ -11,7 +11,7 @@ include get_template_directory() . '/template-parts/partials/home/finance-servic
 include get_template_directory() . '/template-parts/partials/home/home-courses.php';
 include get_template_directory() . '/template-parts/partials/home/statistics.php';
 include get_template_directory() . '/template-parts/partials/home/goals.php';
-//include get_template_directory() . '/template-parts/partials/home/customer-order.php';
+include get_template_directory() . '/template-parts/partials/home/satisfaction.php';
 //include get_template_directory() . '/template-parts/partials/home/price.php';
 ////include get_template_directory() . '/template-parts/partials/home/blog.php';
 //include get_template_directory() . '/template-parts/partials/home/des.php';
