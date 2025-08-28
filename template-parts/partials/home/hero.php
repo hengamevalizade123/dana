@@ -80,7 +80,6 @@
 									<button class="w-100" type="submit">ارسال و دریافت کد تایید</button>
 								</div>
 							</form>
-
 						</div>
 					</div>
 				</div>

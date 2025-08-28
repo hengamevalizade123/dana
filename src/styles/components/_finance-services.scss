@@ -1,0 +1,47 @@
+.c-finance-services{
+	h2{
+		@include font-size(28px,1.6);
+		color: #492464;
+	}
+	ul{
+		margin-top: 42px;
+	}
+	li{
+		width:33.33%;
+		list-style: none;
+		padding: 24px;
+		box-sizing: border-box;
+		img{
+			height: 120px;
+			width: 125px;
+		}
+		&:nth-child(1),
+		&:nth-child(2),
+		&:nth-child(3) {
+border-bottom: 1px solid #492464;
+		}
+		&:nth-child(1),
+		&:nth-child(2),
+		&:nth-child(4),
+		&:nth-child(5){
+			border-left: 1px solid #492464;
+			box-sizing: border-box;
+		}
+		a{
+			color: #960096;
+			gap: 16px;
+			display: flex;
+			&:before{
+				content: "";
+				background-image: url('data:image/svg+xml,<svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M-0.000879288 9.89487L7.44708 0H13.9566L6.50868 9.89487L13.9566 19.8434L14.1133 20H7.60372L7.44708 19.8434L-0.000879288 9.89487Z" fill="%23960096"/></svg>');
+				height: 20px;
+				width: 14px;
+				display: flex;
+			}
+		}
+	}
+	h3{
+		@include font-size(22px,1.6);
+		color: #492464;
+	}
+}

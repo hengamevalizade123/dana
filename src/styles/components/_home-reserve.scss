@@ -1,0 +1,138 @@
+.c-home-reserve {
+	background: linear-gradient(0deg, #FFC300 0%, #D1913C 100%);
+	padding: 38px 0;
+	gap: 24px;
+	border-radius: 8px;
+
+	h2 {
+		@include font-size(35px, 1.6);
+		color: #212121;
+	}
+
+	form {
+		gap: 24px;
+
+		div {
+			flex: 1;
+			gap: 12px;
+
+			&:nth-child(4) {
+				flex: 2.1;
+			}
+
+			&:last-child {
+				flex-basis: 100%;
+
+				label {
+					flex: 3.5;
+					font-weight: bold;
+					@include font-size(18px, 1.6);
+				}
+
+				button {
+					flex: 2.1;
+					border-radius: 4px;
+					height: 50px;
+					background: #515151;
+					box-shadow: 0px 4px 4px 0px #00000026;
+					border: 0;
+					outline: none;
+					color: var(--color-white);
+					font-weight: bold;
+					@include font-size(18px, 1.6);
+					position: relative;
+
+					&:before {
+						content: "";
+						background-image: url('data:image/svg+xml,<svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.42115 8.58562L0 2.99965V0.117477L7.42115 5.70345L14.8825 0.117477L15 0V2.88217L14.8825 2.99965L7.42115 8.58562Z" fill="white"/></svg>');
+						width: 14px;
+						height: 8px;
+						position: absolute;
+						background-repeat: no-repeat;
+						background-size: contain;
+						left: 16px;
+					}
+				}
+			}
+
+			input, select {
+				width: 100%;
+				box-sizing: border-box;
+				box-shadow: 0px 4px 4px 0px #00000026;
+				background: #D9D9D9;
+				border-radius: 4px;
+				border: 0;
+				padding: 10px 13px;
+				text-align: right;
+				color: #9999A1;
+				height: 45px;
+				outline: none;
+			}
+		}
+
+		label {
+			color: #212121;
+		}
+	}
+
+	&__content {
+		padding: 0 62px;
+		gap: 24px;
+	}
+
+	&__info {
+		color: #212121;
+
+		p {
+			flex: 3.5;
+			@include font-size(16px, 1.6);
+		}
+
+		div {
+			flex: 2.1;
+			border: 1px solid #515151;
+			border-radius: 4px;
+			@include font-size(16px, 1.8);
+
+			a {
+				box-shadow: 0px 4px 4px 0px #00000026;
+				background: var(--color-white);
+				color: #212121;
+				@include font-size(18px, 1.6);
+				border-radius: 4px;
+				height: 35px;
+				font-weight: bold;
+				margin: 16px 22px;
+			}
+		}
+	}
+}
+
+.title-center {
+	position: relative;
+	white-space: nowrap;
+	align-items: center;
+	gap: 18px;
+
+	&:before {
+		content: "";
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 1px;
+		background: #212121;
+		position: relative;
+		display: inline-block;
+	}
+
+	&:after {
+		content: "";
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 1px;
+		background: #212121;
+		position: relative;
+		display: inline-block;
+	}
+}
