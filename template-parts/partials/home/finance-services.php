@@ -1,7 +1,7 @@
 <section class="o-section c-section--finance-services">
 	<div class="o-section__wrapper">
 		<div class="c-finance-services">
-			<h2 class="txt-center">
+			<h2 class="txt-center title-section">
 				خدمات مالــی و مالیاتــی مجموعه ما
 			</h2>
 			<ul class="p-0 d-flex flex-wrap">

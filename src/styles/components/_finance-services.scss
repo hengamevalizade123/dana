@@ -1,8 +1,5 @@
 .c-finance-services{
-	h2{
-		@include font-size(28px,1.6);
-		color: #492464;
-	}
+
 	ul{
 		margin-top: 42px;
 	}
@@ -44,4 +41,8 @@ border-bottom: 1px solid #492464;
 		@include font-size(22px,1.6);
 		color: #492464;
 	}
+}
+.title-section{
+	@include font-size(28px,1.6);
+	color: #492464;
 }

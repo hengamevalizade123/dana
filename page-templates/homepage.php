@@ -8,8 +8,9 @@ include get_template_directory() . '/template-parts/partials/home/home-services.
 include get_template_directory() . '/template-parts/partials/home/home-about.php';
 include get_template_directory() . '/template-parts/partials/home/home-reserve.php';
 include get_template_directory() . '/template-parts/partials/home/finance-services.php';
-//include get_template_directory() . '/template-parts/partials/home/support.php';
-//include get_template_directory() . '/template-parts/partials/home/feed.php';
+include get_template_directory() . '/template-parts/partials/home/home-courses.php';
+//include get_template_directory() . '/template-parts/partials/home/statistics.php';
+//include get_template_directory() . '/template-parts/partials/home/statistics.php';
 //include get_template_directory() . '/template-parts/partials/home/customer-order.php';
 //include get_template_directory() . '/template-parts/partials/home/price.php';
 ////include get_template_directory() . '/template-parts/partials/home/blog.php';
