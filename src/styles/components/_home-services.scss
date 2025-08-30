@@ -1,11 +1,12 @@
-.c-section--home-services{
+.c-section--home-services {
 	margin-top: 3.375em;
 }
+
 .c-home-services {
-	ul {
+	.c-home-services__list {
 		gap: 40px;
 
-		li {
+		div.c-home-services__item {
 			flex: 1;
 			list-style: none;
 			background: linear-gradient(90deg, #492464 0%, #960096 100%);
@@ -20,18 +21,71 @@
 				@include font-size(28px, 1);
 				margin: 0;
 			}
+
+			@include mq($until: desktop) {
+				box-sizing: border-box;
+				padding: 18px 24px;
+				h3 {
+					@include font-size(22px, 1);
+				}
+			}
+			@include mq($until: md) {
+				background: var(--color-white);
+				border: 1px solid #492464;
+				h3 {
+					color: #492464;
+				}
+				a {
+					background: linear-gradient(270deg, #960096 0%, #492464 100%);
+					color: var(--color-white);
+				}
+
+			}
+			@include mq($from: sm, $until: md) {
+				margin-left: 12px;
+				width: calc(50% - 6px);
+			}
+			@include mq($until: sm) {
+				margin-left: 12px;
+				width: 100%;
+			}
 		}
 
 		p {
 			margin: 0;
-			@include font-size(18px,1.8);
+			@include font-size(18px, 1.8);
 		}
-		a{
-			@include font-size(18px,1);
+
+		a {
+			@include font-size(18px, 1);
 			text-decoration: none;
 			padding: 12px 28px;
 			border-radius: 8px;
 			border: 1px solid var(--color-white);
+		}
+
+		@include mq($until: desktop) {
+			p {
+				@include font-size(14px, 1.8);
+			}
+			a {
+				@include font-size(14px, 1);
+				padding: 8px 16px;
+			}
+		}
+		@include mq($until: md) {
+			a{
+				padding:12px 28px;
+			}
+		}
+	}
+
+	@include mq($until: md) {
+		.flickity-button.previous {
+			background-image: url('data:image/svg+xml,<svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.00031662 7.57885L5.58629 15H10.4685L4.88249 7.57885L10.4685 0.117477L10.5859 0H5.70377L5.58629 0.117477L0.00031662 7.57885Z" fill="%23492464"/></svg>');
+		}
+		.flickity-button.next {
+			background-image: url('data:image/svg+xml,<svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.5856 7.57885L4.99965 15H0.117477L5.70345 7.57885L0.117477 0.117477L0 0H4.88217L4.99965 0.117477L10.5856 7.57885Z" fill="%23492464"/></svg>');
 		}
 	}
 }

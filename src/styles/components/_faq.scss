@@ -1,0 +1,88 @@
+.faq{
+	margin-top: 70px;
+}
+.faq-answer {
+	display: none;
+	color: #871279;
+	@include font-size(14px,1.6);
+}
+
+.faq-item {
+	@include font-size(16px, 1.6);
+}
+
+.faq-toggle {
+	color: #492464;
+	@include font-size(28px, 1.6);
+}
+
+.faq-item {
+	border-bottom: 1px solid #492464;
+	padding: 10px 0;
+}
+
+.faq-item-content {
+	width: 52%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	@include mq($from: md, $until: desktop) {
+		width: 60%;
+	}
+	@include mq($from: sm, $until: md) {
+		width: 80%;
+	}
+	@include mq($until: sm) {
+		width: 94%;
+	}
+}
+.faq-question {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	cursor: pointer;
+	align-items: center;
+}
+.social{
+border: 2px solid #960096;
+	border-radius: 8px;
+	margin: auto;
+	margin-top: 110px;
+	padding: 24px;
+	text-align: center;
+	gap: 25px;
+	width: 52%;
+	box-sizing: border-box;
+	p{
+		color: #710071;
+		@include font-size(20px,1.6);
+		font-weight: 700;
+	}
+	li{
+		background: linear-gradient(270deg, #960096 0%, #492464 100%);
+		border-radius: 8px;
+		padding: 18px;
+		width: 44px;
+		height: 44px;
+	}
+	ul{
+		gap: 50px;
+	}
+	@include mq($from: md, $until: desktop) {
+		width: 60%;
+	}
+	@include mq($from: sm, $until: md) {
+		width: 80%;
+	}
+	@include mq($until: sm) {
+		width: 94%;
+		ul{
+			gap: 30px;
+		}
+		li{
+			padding: 14px;
+			width: 36px;
+			height: 36px;
+		}
+	}
+}

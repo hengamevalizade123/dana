@@ -1,34 +1,53 @@
-.c-finance-services{
+.c-finance-services {
 
-	ul{
+	.c-finance-services__list {
 		margin-top: 42px;
 	}
-	li{
-		width:33.33%;
+
+	.c-finance-services__item {
+		width: 33.33%;
 		list-style: none;
 		padding: 24px;
 		box-sizing: border-box;
-		img{
+
+		img {
 			height: 120px;
 			width: 125px;
 		}
+
 		&:nth-child(1),
 		&:nth-child(2),
 		&:nth-child(3) {
-border-bottom: 1px solid #492464;
+			border-bottom: 1px solid #492464;
 		}
+
 		&:nth-child(1),
 		&:nth-child(2),
 		&:nth-child(4),
-		&:nth-child(5){
+		&:nth-child(5) {
 			border-left: 1px solid #492464;
 			box-sizing: border-box;
 		}
-		a{
+
+		@include mq($from: sm, $until: md) {
+			border-left: 1px solid #492464;
+			border-bottom: 0 !important;
+		}
+		@include mq($until: sm) {
+			border-left: 0 !important;;
+			box-sizing: border-box;
+			border-bottom: 1px solid #492464;
+			border-top: 1px solid #492464;
+			width: 100%;
+			margin-left: 18px;
+		}
+
+		a {
 			color: #960096;
 			gap: 16px;
 			display: flex;
-			&:before{
+
+			&:before {
 				content: "";
 				background-image: url('data:image/svg+xml,<svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M-0.000879288 9.89487L7.44708 0H13.9566L6.50868 9.89487L13.9566 19.8434L14.1133 20H7.60372L7.44708 19.8434L-0.000879288 9.89487Z" fill="%23960096"/></svg>');
 				height: 20px;
@@ -37,12 +56,28 @@ border-bottom: 1px solid #492464;
 			}
 		}
 	}
-	h3{
-		@include font-size(22px,1.6);
+
+	h3 {
+		@include font-size(22px, 1.6);
 		color: #492464;
+		@include mq($until: desktop) {
+			@include font-size(18px, 1.6);
+		}
+	}
+	@include mq($until: md) {
+		.flickity-button.next {
+			background-image: url('data:image/svg+xml,<svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.00031662 7.57885L5.58629 15H10.4685L4.88249 7.57885L10.4685 0.117477L10.5859 0H5.70377L5.58629 0.117477L0.00031662 7.57885Z" fill="%23492464"/></svg>');
+		}
+		.flickity-button.previous {
+			background-image: url('data:image/svg+xml,<svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.5856 7.57885L4.99965 15H0.117477L5.70345 7.57885L0.117477 0.117477L0 0H4.88217L4.99965 0.117477L10.5856 7.57885Z" fill="%23492464"/></svg>');
+		}
 	}
 }
-.title-section{
-	@include font-size(28px,1.6);
+
+.title-section {
+	@include font-size(28px, 1.6);
 	color: #492464;
+	@include mq($until: md) {
+		@include font-size(23px, 1.6);
+	}
 }

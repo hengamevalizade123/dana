@@ -22,8 +22,8 @@
 					<button data-tab="#t14">اصول حسابداری</button>
 				</div>
 				<div id="t1" class="tab-content active">
-					<ul class="d-flex flex-wrap space-between p-0">
-						<li>
+					<div class="d-flex flex-wrap space-between p-0 carousel tab-buttons-list" data-flickity='{ "contain": true, "pageDots": false, "adaptiveHeight": true, "cellAlign": "left", "wrapAround": true,"watchCSS": true,"rightToLeft": true,"autoPlay": 4500}'>
+						<div class="tab-buttons-item">
 							<div class="c-home-courses__img d-flex">
 								<img class="w-100"
 									 src="<?php echo get_template_directory_uri(); ?>/assets/images/video-1.png" alt="">
@@ -57,8 +57,8 @@
 							</ul>
 							</div>
 							<a class="d-flex add-cart" href="#">افـــزودن به سبد خریـــد</a>
-						</li>
-						<li>
+						</div>
+						<div class="tab-buttons-item">
 							<div class="c-home-courses__img d-flex">
 								<img class="w-100"
 									 src="<?php echo get_template_directory_uri(); ?>/assets/images/video-1.png" alt="">
@@ -92,8 +92,8 @@
 								</ul>
 							</div>
 							<a class="d-flex add-cart" href="#">افـــزودن به سبد خریـــد</a>
-						</li>
-						<li>
+						</div>
+						<div class="tab-buttons-item">
 							<div class="c-home-courses__img d-flex">
 								<img class="w-100"
 									 src="<?php echo get_template_directory_uri(); ?>/assets/images/video-1.png" alt="">
@@ -127,8 +127,8 @@
 								</ul>
 							</div>
 							<a class="d-flex add-cart" href="#">افـــزودن به سبد خریـــد</a>
-						</li>
-						<li>
+						</div>
+						<div class="tab-buttons-item">
 							<div class="c-home-courses__img d-flex">
 								<img class="w-100"
 									 src="<?php echo get_template_directory_uri(); ?>/assets/images/video-1.png" alt="">
@@ -162,8 +162,8 @@
 								</ul>
 							</div>
 							<a class="d-flex add-cart" href="#">افـــزودن به سبد خریـــد</a>
-						</li>
-						<li>
+						</div>
+						<div class="tab-buttons-item">
 							<div class="c-home-courses__img d-flex">
 								<img class="w-100"
 									 src="<?php echo get_template_directory_uri(); ?>/assets/images/video-1.png" alt="">
@@ -197,8 +197,8 @@
 								</ul>
 							</div>
 							<a class="d-flex add-cart" href="#">افـــزودن به سبد خریـــد</a>
-						</li>
-						<li>
+						</div>
+						<div class="tab-buttons-item">
 							<div class="c-home-courses__img d-flex">
 								<img class="w-100"
 									 src="<?php echo get_template_directory_uri(); ?>/assets/images/video-1.png" alt="">
@@ -232,8 +232,8 @@
 								</ul>
 							</div>
 							<a class="d-flex add-cart" href="#">افـــزودن به سبد خریـــد</a>
-						</li>
-					</ul>
+						</div>
+					</div>
 				</div>
 				<div id="t2" class="tab-content">
 					<ul class="d-flex flex-wrap space-between p-0">

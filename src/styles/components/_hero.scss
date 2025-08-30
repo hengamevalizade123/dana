@@ -1,3 +1,6 @@
+.c-section--hero{
+	padding-top: 0;
+}
 .c-hero {
 	&__slider {
 		height: 464px;
@@ -17,16 +20,30 @@
 		h2 {
 			@include font-size(56px, 1.6);
 			margin: 0;
+			@include mq($from: sm, $until: md) {
+				@include font-size(34px, 1.6);
+			}
+			@include mq($until: sm) {
+				@include font-size(24px, 1.6);
+			}
 		}
 
 		.c-slider-main p {
 			@include font-size(24px, 1.6);
 			margin: 8px 0;
+			@include mq($from: sm, $until: md) {
+				@include font-size(18px, 1.6);
+			}
+			@include mq($until: sm) {
+				@include font-size(14px, 1.6);
+			}
 		}
 	}
-	&__counseling{
-	margin-bottom: -100px;
-}
+
+	&__counseling {
+		margin-bottom: -100px;
+	}
+
 	&__counseling-txt {
 		background: #492464;
 		border: 5px solid var(--color-white);
@@ -35,6 +52,13 @@
 		width: 20%;
 		box-shadow: 5px 4px 4px 4px rgb(0 0 0 / 25%);
 		z-index: 3;
+		@include mq($from: md, $until: desktop) {
+			display: none;
+		}
+		@include mq($until: md) {
+			width: 100%;
+			margin: auto;
+		}
 	}
 
 	&__counseling-form {
@@ -45,11 +69,14 @@
 		border: 3px solid var(--color-white);
 		border-right: 0;
 		z-index: 2;
+
 		form {
 			gap: 8px;
-label{
-	@include font-size(14px, 1.6);
-}
+
+			label {
+				@include font-size(14px, 1.6);
+			}
+
 			div {
 				display: flex;
 				flex-direction: column;
@@ -64,21 +91,31 @@ label{
 			border: 0;
 			outline: none;
 			@include font-size(14px, 1);
-			padding:6px 8px;
+			padding: 6px 8px;
 			color: #9999A1;
 			max-width: 185px;
 			box-sizing: border-box;
 			text-align: right;
 		}
-		button{
+
+		button {
 			height: 38px;
 			border-radius: 4px;
 			box-sizing: border-box;
 			border: 0;
-			@include font-size(15px,1.6);
+			@include font-size(15px, 1.6);
 			color: #492464;
 			background: #FFC300;
 			font-weight: bold;
+		}
+
+		@include mq($from: md, $until: desktop) {
+			margin: auto;
+			margin-bottom: 54px;
+			border-right: 3px solid var(--color-white);
+		}
+		@include mq($until: md) {
+			display: none;
 		}
 	}
 
@@ -88,6 +125,10 @@ label{
 
 	.c-slider-main {
 		padding-top: 240px;
+		@include mq($until: desktop) {
+			padding-top: 0;
+			padding-bottom: 40px;
+		}
 	}
 }
 

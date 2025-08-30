@@ -1,0 +1,88 @@
+.c-customers {
+	.c-customers__list {
+		position: relative;
+	}
+
+	.c-customers__item {
+		flex: 1 0 20%;
+		padding: 32px;
+		box-sizing: border-box;
+		gap: 64px;
+		&:before {
+			content: "";
+			left: 0;
+			right: 0;
+			background: #492464;
+			height: 1px;
+			position: absolute;
+		}
+		&:not(:nth-child(5n)) {
+			border-left: 1px solid #492464;
+		}
+
+		@include mq($from: sm, $until: md) {
+			width: 33.33%;
+			border-left: 1px solid #492464;
+		}
+		@include mq($until: sm) {
+			width: 50%;
+			border-left: 1px solid #492464;
+		}
+
+		img {
+			height: 100px;
+			width: auto;
+			object-fit: contain;
+			@include mq($from: md, $until: desktop) {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+
+	&__desc-txt {
+		@include font-size(16px, 1.8);
+	}
+
+	@include mq($until: md) {
+		.flickity-button {
+			display: none;
+		}
+	}
+}
+
+#home-desc {
+	overflow: hidden;
+	margin-top: 48px;
+	text-align: justify;
+}
+
+.more-btn {
+	text-align: left;
+	margin-top: 16px;
+
+	button {
+		@include font-size(16px, 1.6);
+		background: none;
+		border: 0;
+		color: #960096;
+		margin-right: auto;
+		gap: 8px;
+
+		&:before {
+			content: "";
+			display: flex;
+			height: 11px;
+			width: 14px;
+			background-image: url('data:image/svg+xml,<svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.94956 15.0575L0.0546875 7.60956V1.1L9.94956 8.54796L19.8981 1.1L20.0547 0.943359V7.45292L19.8981 7.60956L9.94956 15.0575Z" fill="%23960096"/></svg>');
+			background-size: contain;
+			background-repeat: no-repeat;
+			transition: all .2s linear;
+		}
+	}
+}
+
+#c-customersBtn.rotated::before {
+	transform: translateY(-50%) rotate(180deg);
+	margin-top: 12px;
+}

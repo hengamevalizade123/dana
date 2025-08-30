@@ -2,6 +2,10 @@
 	.tab-buttons {
 		position: relative;
 		gap: 16px 0px;
+		margin-bottom: 18px;
+		@include mq($until: md) {
+			display: none;
+		}
 
 		&:after {
 			content: "";
@@ -21,52 +25,69 @@
 			bottom: 0;
 			background: #492464;
 		}
-	}
+		button {
+			@include font-size(18px, 1);
+			color: #212121;
+			border: 0;
+			background: none;
+			outline: none;
+			box-sizing: border-box;
+			flex: 0 0 calc(100% / 7);
+			background-clip: content-box;
+			margin: 8px 0;
+			padding: 4px 0;
+			transition: all .2s linear;
 
-	button {
-		@include font-size(18px, 1);
-		color: #212121;
-		border: 0;
-		background: none;
-		outline: none;
-		box-sizing: border-box;
-		flex: 0 0 calc(100% / 7);
-		background-clip: content-box;
-		margin: 8px 0;
-		padding: 4px 0;
-		transition: all .2s linear;
+			&:not(:nth-child(7)):not(:nth-child(14)) {
+				border-left: 1px solid #492464;
+			}
 
-		&:not(:nth-child(7)):not(:nth-child(14)) {
-			border-left: 1px solid #492464;
-		}
+			&.active {
+				color: #960096;
+				position: relative;
 
-		&.active {
-			color: #960096;
-			position: relative;
-
-			&:after {
-				content: "";
-				position: absolute;
-				right: 0;
-				left: 0;
-				bottom: -15px;
-				height: 6px;
-				background: #960096;
+				&:after {
+					content: "";
+					position: absolute;
+					right: 0;
+					left: 0;
+					bottom: -15px;
+					height: 6px;
+					background: #960096;
+				}
 			}
 		}
 	}
 
 	.tab-content {
-		> ul {
+		> ul, .tab-buttons-list {
 			gap: 60px;
 
-			> li {
+			> li, .tab-buttons-item {
 				width: calc(33.33% - 40px);
 				list-style: none;
 				border-radius: 8px;
 				box-sizing: border-box;
 				border: 1px solid #D1913C;
 				overflow: hidden;
+			}
+			@include mq($from: md, $until: desktop) {
+				gap: 36px;
+				> li, .tab-buttons-item{
+					width: calc(33.33% - 24px);
+				}
+			}
+			@include mq($from: sm, $until: md) {
+				> li, .tab-buttons-item{
+					margin-left: 36px;
+					width: calc(50% - 18px);
+				}
+			}
+			@include mq($until: sm) {
+				> li, .tab-buttons-item{
+					margin-left: 24px;
+					width:100%;
+				}
 			}
 		}
 	}
@@ -176,7 +197,7 @@
 	gap: 8px;
 	align-items: center;
 	justify-content: flex-end;
-
+margin-top: 28px;
 	&:before {
 		content: "";
 		background-image: url('data:image/svg+xml,<svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M-0.000879288 9.89487L7.44708 0H13.9566L6.50868 9.89487L13.9566 19.8434L14.1133 20H7.60372L7.44708 19.8434L-0.000879288 9.89487Z" fill="%23960096"/></svg>');

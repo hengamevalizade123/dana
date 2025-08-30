@@ -1,8 +1,130 @@
-.c-satisfaction{
-	ul{
+.c-satisfaction {
+	ul {
 		gap: 30px;
-		li{
+
+		li {
 			flex: 1;
+		}
+
+		@include mq($until: md) {
+			flex-direction: column;
+		}
+	}
+
+	&__slider {
+		position: relative;
+	}
+
+	.flickity-button {
+		position: absolute;
+		z-index: 1;
+		height: 14px;
+		width: 18px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		border: 0;
+		background-color: #ffffff00;
+		left: 72px;
+		right: auto;
+
+		&.previous {
+			top: 28px;
+			background-image: url('data:image/svg+xml,<svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.1051 -0.000880241L20 7.44708V13.9566L10.1051 6.50868L0.156636 13.9566L0 14.1133L0 7.60372L0.156636 7.44708L10.1051 -0.000880241Z" fill="%23D9D9D9"/></svg>');
+			bottom: auto;
+			@include mq($until: md){
+			transform: rotate(90deg);
+			right: 24px;
+			top: 84px;
+		}
+		}
+
+		&.next {
+			bottom: 10px;
+			background-image: url('data:image/svg+xml,<svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.89487 15.0575L0 7.60956V1.1L9.89487 8.54796L19.8434 1.1L20 0.943359V7.45292L19.8434 7.60956L9.89487 15.0575Z" fill="%23D9D9D9"/></svg>');
+			top: auto;
+			@include mq($until: md){
+				transform: rotate(90deg);
+				left: 24px;
+				top: 84px;
+			}
 		}
 	}
 }
+
+.employer-carousel {
+	background: #960096;
+
+	&__info {
+		color: var(--color-white);
+	}
+
+	a {
+		color: var(--color-white);
+	}
+}
+
+.students-carousel {
+	background: #EDF2F4;
+
+	&__info {
+		color: #212121;
+	}
+
+	a {
+		color: #960096;
+	}
+
+	.flickity-button.previous {
+		background-image: url('data:image/svg+xml,<svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.1051 -0.000880241L20 7.44708V13.9566L10.1051 6.50868L0.156636 13.9566L0 14.1133L0 7.60372L0.156636 7.44708L10.1051 -0.000880241Z" fill="%23960096"/></svg>');
+	}
+
+	.flickity-button.next {
+		background-image: url('data:image/svg+xml,<svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.89487 15.0575L0 7.60956V1.1L9.89487 8.54796L19.8434 1.1L20 0.943359V7.45292L19.8434 7.60956L9.89487 15.0575Z" fill="%23960096"/></svg>');
+	}
+}
+
+.employer-carousel, .students-carousel {
+	padding: 18px 24px;
+	border-radius: 8px;
+	@include mq($until: md) {
+		height: 450px;
+	}
+
+	.carousel-cell {
+		gap: 8px;
+		height: 100%;
+		@include mq($until: md) {
+			flex-direction: column-reverse;
+		}
+	}
+
+	&__info {
+		@include font-size(14px, 1.6);
+		height: 100%;
+
+		.employer-name {
+			flex-direction: column;
+			gap: 6px;
+			@include mq($until: md) {
+				@include font-size(18px, 1.6);
+			}
+		}
+
+		a {
+			@include font-size(14px, 1.6);
+			gap: 12px;
+			@include mq($until: md) {
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+	}
+
+	&__img {
+		img {
+			width: 168px;
+			height: 168px;
+		}
+	}
+}
+
