@@ -144,16 +144,22 @@
 				</p>
 				<ul class="d-flex p-0 m-0">
 					<li class="d-flex">
+						<a href="#" class="d-flex">
 						<img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/aparat.svg"
 							 alt="">
+						</a>
 					</li>
 					<li class="d-flex">
+						<a href="#" class="d-flex">
 						<img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/kinkedin.svg"
 							 alt="">
+						</a>
 					</li>
 					<li class="d-flex">
+						<a href="#" class="d-flex">
 						<img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.svg"
 							 alt="">
+						</a>
 					</li>
 				</ul>
 			</div>

@@ -1,109 +1,180 @@
-<section class="o-section c-section--home-podcast">
+<section class="o-section c-section__articles">
 	<div class="o-section__wrapper">
-		<div class="c-home-podcast">
+		<div class="c-articles">
 			<h2 class="txt-center title-section m-0">
 				مقالات، پادکســت‌ها و آخــــرین اخبار مالیاتـــی
 			</h2>
-			<ul class="d-flex m-0 p-0">
-				<li class="home-blog">
-					<div class="home-blog-carousel"
-						 data-flickity='{ "contain": true, "wrapAround": true, "autoPlay": 4500, "draggable": false, "fade": true ,"pageDots":false}'>
-						<div class="blog-carousel-cell items-stretch d-flex items-center space-between">
-							<div class="home-blog__img d-flex">
-								<img class="w-100"
-									 src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-img.png"
-									 alt="">
-							</div>
-							<div class="home-blog__info d-flex space-between flex-column">
-								<h3 class="m-0">
-									اظهارنامه مالیاتــــی برای دستگاه پـــوز
-								</h3>
-								<p class="mb-0">
-									اگر صـــاحب کســب‌وکار هستیــد و از دستــــگاه پــوز
-									(کارتخوان) استفاده می‌کنید، حتماً شنیدید که پای
-									این دستگاه‌ها هم به دنیای مالیات باز شده! شایـــد
-									اولش براتون عجیب به‌نظر برسه که “مگه کارتخــوان
-									هم مالیات داره؟!”
+			<div class="row gap-md items-center">
+				<div class="home-blog">
+					<div class="c-articles__blog"
+						 data-flickity='{ "cellAlign": "right","autoPlay": 3500, "pageDots": false, "rightToLeft": true, "lazyLoad": true }'>
+						<div class="c-item">
+							<a href="#" class="c-item__img">
+								<img alt="مالیاتی"
+									 src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-img.png">
+							</a>
+
+							<div class="c-item__details">
+								<div class="c-item__tag">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+										 xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M6 13.25C5.58579 13.25 5.25 13.5858 5.25 14C5.25 14.4142 5.58579 14.75 6 14.75H14C14.4142 14.75 14.75 14.4142 14.75 14C14.75 13.5858 14.4142 13.25 14 13.25H6Z"
+											fill="#2D264B"></path>
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											  d="M3.25473 0.250001C2.89356 0.249982 2.57327 0.249966 2.30742 0.274362C2.02191 0.300563 1.73205 0.359261 1.45324 0.517507C0.994247 0.778016 0.649139 1.19888 0.449768 1.6868C0.333999 1.97013 0.290018 2.26374 0.269638 2.57222C0.249988 2.86965 0.249994 3.23324 0.25 3.66923V10.005C0.25 10.9328 0.25 12.1394 0.280903 13.2097C0.296372 13.7455 0.319809 14.2561 0.355872 14.6854C0.390012 15.0919 0.440275 15.4963 0.531426 15.7769C1.1002 17.5274 2.47264 18.8998 4.22315 19.4686C5.09067 19.7505 6.13189 19.7503 7.83817 19.75H12.1618C13.8681 19.7503 14.9093 19.7505 15.7768 19.4686C17.5274 18.8998 18.8998 17.5274 19.4686 15.7768C19.7504 14.9093 19.7503 13.8681 19.75 12.1618V11.8382C19.7503 10.1319 19.7504 9.09068 19.4686 8.22316C18.8998 6.47264 17.5274 5.10021 15.7768 4.53143C15.5423 4.45521 15.2032 4.41271 14.8707 4.3827C14.5138 4.35048 14.0816 4.32651 13.6151 4.30843C12.681 4.27222 11.5784 4.25851 10.6042 4.25326C10.1339 4.25073 9.6232 3.84962 9.34355 3.1655L9.33417 3.14253C8.92033 2.12979 8.2159 1.28541 7.3116 0.772159C6.80845 0.486587 6.26103 0.364226 5.62865 0.306194C5.01615 0.249987 4.26047 0.249994 3.32173 0.250003L3.25473 0.250001ZM2.19365 1.82203C2.21395 1.81051 2.26751 1.78433 2.44449 1.76809C2.63355 1.75074 2.88415 1.75 3.28572 1.75C4.26886 1.75 4.95564 1.75074 5.49157 1.79992C6.01544 1.84799 6.32656 1.93784 6.57119 2.07669C7.15129 2.40594 7.64458 2.97318 7.94561 3.7099L7.95506 3.73301C8.35389 4.70872 9.27332 5.74612 10.5961 5.75324C11.566 5.75846 12.6485 5.77209 13.557 5.8073C14.0119 5.82493 14.4155 5.8477 14.7359 5.87663C15.0808 5.90776 15.2605 5.94084 15.3133 5.95801C16.6072 6.37841 17.6216 7.39282 18.042 8.68668C18.2407 9.29839 18.25 10.0803 18.25 12C18.25 13.9197 18.2407 14.7016 18.042 15.3133C17.6216 16.6072 16.6072 17.6216 15.3133 18.042C14.7016 18.2408 13.9197 18.25 12 18.25H8C6.08035 18.25 5.29839 18.2408 4.68668 18.042C3.39282 17.6216 2.37841 16.6072 1.95801 15.3133C1.9268 15.2173 1.8853 14.9729 1.85061 14.5599C1.81785 14.1698 1.7954 13.6901 1.78028 13.1664C1.75006 12.1197 1.75 10.9328 1.75 10V3.69388C1.75 3.22693 1.75038 2.91318 1.76638 2.67111C1.78201 2.4345 1.81005 2.32338 1.83832 2.25418C1.9249 2.0423 2.05887 1.89853 2.19365 1.82203Z"
+											  fill="#2D264B"></path>
+									</svg>
+									مالیاتی
+								</div>
+								<h2 class="c-item__title">
+									<a href="#">
+										اظهارنامه مالیاتــــی برای دستگاه پـــوز</a>
+								</h2>
+								<p>
+									اگر صـــاحب کســب‌وکار هستیــد و از دستــــگاه پــوز (کارتخوان) استفاده می‌کنید،
+									حتماً شنیدید که پای این دستگاه‌ها هم به دنیای مالیات باز شده! شایـــد اولش براتون
+									عجیب به‌نظر برسه که “مگه کارتخــوان هم مالیات داره؟!”
 								</p>
+								<div class="c-item__time">
+                                        <span class="c-blog__posted-on d-flex"><svg width="24" height="24"
+																					viewBox="0 0 24 24"
+																					fill="none"
+																					xmlns="http://www.w3.org/2000/svg">
+<path d="M8 2V5" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+	  stroke-linejoin="round"></path>
+<path d="M16 2V5" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+	  stroke-linejoin="round"></path>
+<path d="M3.5 9.09H20.5" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+	  stroke-linejoin="round"></path>
+<path d="M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z"
+	  stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M11.9955 13.7H12.0045" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M8.29431 13.7H8.30329" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M8.29431 16.7H8.30329" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<time class="c-blog__time-updated" datetime="1404-05-21\13:35:06">آخرین بروزرسانی : ۳ هفته پیش</time></span></div>
 							</div>
 						</div>
-						<div class="blog-carousel-cell items-stretch d-flex items-center space-between">
-							<div class="home-blog__img d-flex">
-								<img class="w-100"
-									 src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-img.png"
-									 alt="">
-							</div>
-							<div class="home-blog__info d-flex space-between flex-column">
-								<h3 class="m-0">
-									اظهارنامه مالیاتــــی برای دستگاه پـــوز
-								</h3>
-								<p class="mb-0">
-									اگر صـــاحب کســب‌وکار هستیــد و از دستــــگاه پــوز
-									(کارتخوان) استفاده می‌کنید، حتماً شنیدید که پای
-									این دستگاه‌ها هم به دنیای مالیات باز شده! شایـــد
-									اولش براتون عجیب به‌نظر برسه که “مگه کارتخــوان
-									هم مالیات داره؟!”
+						<div class="c-item">
+							<a href="#" class="c-item__img">
+								<img alt="مالیاتی"
+									 src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-img.png">
+							</a>
+
+							<div class="c-item__details">
+								<div class="c-item__tag">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+										 xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M6 13.25C5.58579 13.25 5.25 13.5858 5.25 14C5.25 14.4142 5.58579 14.75 6 14.75H14C14.4142 14.75 14.75 14.4142 14.75 14C14.75 13.5858 14.4142 13.25 14 13.25H6Z"
+											fill="#2D264B"></path>
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											  d="M3.25473 0.250001C2.89356 0.249982 2.57327 0.249966 2.30742 0.274362C2.02191 0.300563 1.73205 0.359261 1.45324 0.517507C0.994247 0.778016 0.649139 1.19888 0.449768 1.6868C0.333999 1.97013 0.290018 2.26374 0.269638 2.57222C0.249988 2.86965 0.249994 3.23324 0.25 3.66923V10.005C0.25 10.9328 0.25 12.1394 0.280903 13.2097C0.296372 13.7455 0.319809 14.2561 0.355872 14.6854C0.390012 15.0919 0.440275 15.4963 0.531426 15.7769C1.1002 17.5274 2.47264 18.8998 4.22315 19.4686C5.09067 19.7505 6.13189 19.7503 7.83817 19.75H12.1618C13.8681 19.7503 14.9093 19.7505 15.7768 19.4686C17.5274 18.8998 18.8998 17.5274 19.4686 15.7768C19.7504 14.9093 19.7503 13.8681 19.75 12.1618V11.8382C19.7503 10.1319 19.7504 9.09068 19.4686 8.22316C18.8998 6.47264 17.5274 5.10021 15.7768 4.53143C15.5423 4.45521 15.2032 4.41271 14.8707 4.3827C14.5138 4.35048 14.0816 4.32651 13.6151 4.30843C12.681 4.27222 11.5784 4.25851 10.6042 4.25326C10.1339 4.25073 9.6232 3.84962 9.34355 3.1655L9.33417 3.14253C8.92033 2.12979 8.2159 1.28541 7.3116 0.772159C6.80845 0.486587 6.26103 0.364226 5.62865 0.306194C5.01615 0.249987 4.26047 0.249994 3.32173 0.250003L3.25473 0.250001ZM2.19365 1.82203C2.21395 1.81051 2.26751 1.78433 2.44449 1.76809C2.63355 1.75074 2.88415 1.75 3.28572 1.75C4.26886 1.75 4.95564 1.75074 5.49157 1.79992C6.01544 1.84799 6.32656 1.93784 6.57119 2.07669C7.15129 2.40594 7.64458 2.97318 7.94561 3.7099L7.95506 3.73301C8.35389 4.70872 9.27332 5.74612 10.5961 5.75324C11.566 5.75846 12.6485 5.77209 13.557 5.8073C14.0119 5.82493 14.4155 5.8477 14.7359 5.87663C15.0808 5.90776 15.2605 5.94084 15.3133 5.95801C16.6072 6.37841 17.6216 7.39282 18.042 8.68668C18.2407 9.29839 18.25 10.0803 18.25 12C18.25 13.9197 18.2407 14.7016 18.042 15.3133C17.6216 16.6072 16.6072 17.6216 15.3133 18.042C14.7016 18.2408 13.9197 18.25 12 18.25H8C6.08035 18.25 5.29839 18.2408 4.68668 18.042C3.39282 17.6216 2.37841 16.6072 1.95801 15.3133C1.9268 15.2173 1.8853 14.9729 1.85061 14.5599C1.81785 14.1698 1.7954 13.6901 1.78028 13.1664C1.75006 12.1197 1.75 10.9328 1.75 10V3.69388C1.75 3.22693 1.75038 2.91318 1.76638 2.67111C1.78201 2.4345 1.81005 2.32338 1.83832 2.25418C1.9249 2.0423 2.05887 1.89853 2.19365 1.82203Z"
+											  fill="#2D264B"></path>
+									</svg>
+									مالیاتی
+								</div>
+								<h2 class="c-item__title">
+									<a href="#">
+										اظهارنامه مالیاتــــی برای دستگاه پـــوز</a>
+								</h2>
+								<p>
+									اگر صـــاحب کســب‌وکار هستیــد و از دستــــگاه پــوز (کارتخوان) استفاده می‌کنید،
+									حتماً شنیدید که پای این دستگاه‌ها هم به دنیای مالیات باز شده! شایـــد اولش براتون
+									عجیب به‌نظر برسه که “مگه کارتخــوان هم مالیات داره؟!”
 								</p>
+								<div class="c-item__time">
+                                        <span class="c-blog__posted-on d-flex"><svg width="24" height="24"
+																					viewBox="0 0 24 24"
+																					fill="none"
+																					xmlns="http://www.w3.org/2000/svg">
+<path d="M8 2V5" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+	  stroke-linejoin="round"></path>
+<path d="M16 2V5" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+	  stroke-linejoin="round"></path>
+<path d="M3.5 9.09H20.5" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+	  stroke-linejoin="round"></path>
+<path d="M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z"
+	  stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M11.9955 13.7H12.0045" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M8.29431 13.7H8.30329" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M8.29431 16.7H8.30329" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<time class="c-blog__time-updated" datetime="1404-05-21\13:35:06">آخرین بروزرسانی : ۳ هفته پیش</time></span></div>
 							</div>
 						</div>
-						<div class="blog-carousel-cell items-stretch d-flex items-center space-between">
-							<div class="home-blog__img d-flex">
-								<img class="w-100"
-									 src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-img.png"
-									 alt="">
-							</div>
-							<div class="home-blog__info d-flex space-between flex-column">
-								<h3 class="m-0">
-									اظهارنامه مالیاتــــی برای دستگاه پـــوز
-								</h3>
-								<p class="mb-0">
-									اگر صـــاحب کســب‌وکار هستیــد و از دستــــگاه پــوز
-									(کارتخوان) استفاده می‌کنید، حتماً شنیدید که پای
-									این دستگاه‌ها هم به دنیای مالیات باز شده! شایـــد
-									اولش براتون عجیب به‌نظر برسه که “مگه کارتخــوان
-									هم مالیات داره؟!”
+						<div class="c-item">
+							<a href="#" class="c-item__img">
+								<img alt="مالیاتی"
+									 src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-img.png">
+							</a>
+
+							<div class="c-item__details">
+								<div class="c-item__tag">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+										 xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M6 13.25C5.58579 13.25 5.25 13.5858 5.25 14C5.25 14.4142 5.58579 14.75 6 14.75H14C14.4142 14.75 14.75 14.4142 14.75 14C14.75 13.5858 14.4142 13.25 14 13.25H6Z"
+											fill="#2D264B"></path>
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											  d="M3.25473 0.250001C2.89356 0.249982 2.57327 0.249966 2.30742 0.274362C2.02191 0.300563 1.73205 0.359261 1.45324 0.517507C0.994247 0.778016 0.649139 1.19888 0.449768 1.6868C0.333999 1.97013 0.290018 2.26374 0.269638 2.57222C0.249988 2.86965 0.249994 3.23324 0.25 3.66923V10.005C0.25 10.9328 0.25 12.1394 0.280903 13.2097C0.296372 13.7455 0.319809 14.2561 0.355872 14.6854C0.390012 15.0919 0.440275 15.4963 0.531426 15.7769C1.1002 17.5274 2.47264 18.8998 4.22315 19.4686C5.09067 19.7505 6.13189 19.7503 7.83817 19.75H12.1618C13.8681 19.7503 14.9093 19.7505 15.7768 19.4686C17.5274 18.8998 18.8998 17.5274 19.4686 15.7768C19.7504 14.9093 19.7503 13.8681 19.75 12.1618V11.8382C19.7503 10.1319 19.7504 9.09068 19.4686 8.22316C18.8998 6.47264 17.5274 5.10021 15.7768 4.53143C15.5423 4.45521 15.2032 4.41271 14.8707 4.3827C14.5138 4.35048 14.0816 4.32651 13.6151 4.30843C12.681 4.27222 11.5784 4.25851 10.6042 4.25326C10.1339 4.25073 9.6232 3.84962 9.34355 3.1655L9.33417 3.14253C8.92033 2.12979 8.2159 1.28541 7.3116 0.772159C6.80845 0.486587 6.26103 0.364226 5.62865 0.306194C5.01615 0.249987 4.26047 0.249994 3.32173 0.250003L3.25473 0.250001ZM2.19365 1.82203C2.21395 1.81051 2.26751 1.78433 2.44449 1.76809C2.63355 1.75074 2.88415 1.75 3.28572 1.75C4.26886 1.75 4.95564 1.75074 5.49157 1.79992C6.01544 1.84799 6.32656 1.93784 6.57119 2.07669C7.15129 2.40594 7.64458 2.97318 7.94561 3.7099L7.95506 3.73301C8.35389 4.70872 9.27332 5.74612 10.5961 5.75324C11.566 5.75846 12.6485 5.77209 13.557 5.8073C14.0119 5.82493 14.4155 5.8477 14.7359 5.87663C15.0808 5.90776 15.2605 5.94084 15.3133 5.95801C16.6072 6.37841 17.6216 7.39282 18.042 8.68668C18.2407 9.29839 18.25 10.0803 18.25 12C18.25 13.9197 18.2407 14.7016 18.042 15.3133C17.6216 16.6072 16.6072 17.6216 15.3133 18.042C14.7016 18.2408 13.9197 18.25 12 18.25H8C6.08035 18.25 5.29839 18.2408 4.68668 18.042C3.39282 17.6216 2.37841 16.6072 1.95801 15.3133C1.9268 15.2173 1.8853 14.9729 1.85061 14.5599C1.81785 14.1698 1.7954 13.6901 1.78028 13.1664C1.75006 12.1197 1.75 10.9328 1.75 10V3.69388C1.75 3.22693 1.75038 2.91318 1.76638 2.67111C1.78201 2.4345 1.81005 2.32338 1.83832 2.25418C1.9249 2.0423 2.05887 1.89853 2.19365 1.82203Z"
+											  fill="#2D264B"></path>
+									</svg>
+									مالیاتی
+								</div>
+								<h2 class="c-item__title">
+									<a href="#">
+										اظهارنامه مالیاتــــی برای دستگاه پـــوز</a>
+								</h2>
+								<p>
+									اگر صـــاحب کســب‌وکار هستیــد و از دستــــگاه پــوز (کارتخوان) استفاده می‌کنید،
+									حتماً شنیدید که پای این دستگاه‌ها هم به دنیای مالیات باز شده! شایـــد اولش براتون
+									عجیب به‌نظر برسه که “مگه کارتخــوان هم مالیات داره؟!”
 								</p>
+								<div class="c-item__time">
+                                        <span class="c-blog__posted-on d-flex"><svg width="24" height="24"
+																					viewBox="0 0 24 24"
+																					fill="none"
+																					xmlns="http://www.w3.org/2000/svg">
+<path d="M8 2V5" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+	  stroke-linejoin="round"></path>
+<path d="M16 2V5" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+	  stroke-linejoin="round"></path>
+<path d="M3.5 9.09H20.5" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+	  stroke-linejoin="round"></path>
+<path d="M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z"
+	  stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M11.9955 13.7H12.0045" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M8.29431 13.7H8.30329" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M8.29431 16.7H8.30329" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<time class="c-blog__time-updated" datetime="1404-05-21\13:35:06">آخرین بروزرسانی : ۳ هفته پیش</time></span></div>
 							</div>
 						</div>
 					</div>
-				</li>
-				<li class="home-podcast d-flex content-center">
-					<img class="w-100"
-						 src="<?php echo get_template_directory_uri(); ?>/assets/images/podcast-img.png"
-						 alt="">
-					<p class="m-0">
-						چه کسانی مشمول مالیات هستند؟
-					</p>
-					</li>
-			</ul>
+				</div>
+
+				<div class="home-podcast">
+					<div class="c-articles__video"
+						 data-flickity='{ "cellAlign": "right", "autoPlay": 4000, "prevNextButtons": false, "pageDots": false, "rightToLeft": true, "lazyLoad": true, "selectedAttraction": 0.01, "friction": 0.2 }'>
+						<div class="c-item">
+							<a class="c-articles__banner"
+							   href="#">
+								<img alt="مالیاتی"
+									 src="<?php echo get_template_directory_uri(); ?>/assets/images/podcast-item.png">
+							</a>
+						</div>
+						<div class="c-item">
+							<a class="c-articles__banner"
+							   href="#">
+								<img alt="مالیاتی"
+									 src="<?php echo get_template_directory_uri(); ?>/assets/images/podcast-item.png">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<ul class="news-link m-0 p-0 d-flex space-between">
-			<li><a class="d-flex items-center" href="#">
-				<img class=""
-					 src="<?php echo get_template_directory_uri(); ?>/assets/images/news.svg"
-					 alt="">
-				اخبار وب‌سایت
-				</a>
-			</li>
-			<li><a class="d-flex items-center" href="#">
-				<img class=""
-					 src="<?php echo get_template_directory_uri(); ?>/assets/images/calendar.svg"
-					 alt="">
-				تقویــم مالیاتی کشــور
-			</a></li>
-			<li><a class="d-flex items-center" href="#">
-				<img class=""
-					 src="<?php echo get_template_directory_uri(); ?>/assets/images/podcast.svg"
-					 alt="">
-				پادکـــست‌ها
-			</a></li>
-			<li><a class="d-flex items-center" href="#">
-				<img class=""
-					 src="<?php echo get_template_directory_uri(); ?>/assets/images/blog.svg"
-					 alt="">
-				مقالات و مطالب خواندنی
-			</a></li>
-		</ul>
 	</div>
 </section>
-

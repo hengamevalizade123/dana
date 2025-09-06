@@ -5,7 +5,43 @@
   'use strict';
 
   document.addEventListener('DOMContentLoaded', function () {
-    // همبرگر منو
+    // video palyer
+    var video = document.getElementById('myVideo');
+    var playBtn = document.querySelector('.btn-center');
+    var fullscreenBtn = document.querySelector('.btn-fullscreen');
+    var iconPlay = playBtn.querySelector('.icon-play');
+    var iconPause = playBtn.querySelector('.icon-pause');
+    var container = document.querySelector('.video-container');
+    video.controls = false; // مخفی کردن کنترل مرورگر
+    // Toggle Play / Pause
+
+    playBtn.addEventListener('click', function () {
+      if (video.paused) {
+        video.play()["catch"](function (err) {
+          return console.log('Play interrupted:', err);
+        });
+        iconPlay.style.display = 'none';
+        iconPause.style.display = 'block';
+      } else {
+        video.pause();
+        iconPlay.style.display = 'block';
+        iconPause.style.display = 'none';
+      }
+    }); // Fullscreen toggle
+
+    fullscreenBtn.addEventListener('click', function () {
+      if (!document.fullscreenElement) {
+        container.requestFullscreen();
+      } else {
+        document.exitFullscreen();
+      }
+    }); // وقتی ویدیو تمام شد → دکمه Play نشان داده شود
+
+    video.addEventListener('ended', function () {
+      iconPlay.style.display = 'block';
+      iconPause.style.display = 'none';
+    }); // همبرگر منو
+
     var hamburger = document.querySelector('.js-hamburger');
 
     if (hamburger) {
@@ -42,7 +78,28 @@
 })();
 
 jQuery(document).ready(function ($) {
-  // 	menu mobile
+  $('.c-home-services__item').each(function () {
+    var $card = $(this);
+    var timeoutId = null;
+    $card.on('mouseenter', function () {
+      // لغو timeout قبلی
+      if (timeoutId) clearTimeout(timeoutId); // ایجاد timeout جدید برای اضافه کردن کلاس
+
+      timeoutId = setTimeout(function () {
+        if (!$card.hasClass('flip')) {
+          // فقط اگر کلاس هنوز اضافه نشده
+          $card.addClass('flip');
+        }
+      }, 300);
+    });
+    $card.on('mouseleave', function () {
+      // لغو timeout و حذف کلاس
+      if (timeoutId) clearTimeout(timeoutId);
+      timeoutId = null;
+      $card.removeClass('flip');
+    });
+  }); // 	menu mobile
+
   function isMobile() {
     return window.innerWidth <= 768;
   }

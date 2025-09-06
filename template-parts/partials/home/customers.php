@@ -1,27 +1,41 @@
 <section class="o-section c-section--customers">
 	<div class="o-section__wrapper">
 		<div class="c-customers">
-			<div class="d-flex flex-wrap p-0 m-0 carousel c-customers__list" data-flickity='{ "contain": true, "pageDots": false, "adaptiveHeight": true, "cellAlign": "right", "wrapAround": true,"watchCSS": true,"rightToLeft": true}'>
+			<div class="d-flex flex-wrap p-0 m-0 carousel c-customers__list"
+				 data-flickity='{ "contain": true, "pageDots": false, "adaptiveHeight": true, "cellAlign": "right", "wrapAround": true,"watchCSS": true,"rightToLeft": true}'>
 				<div class="items-center content-center d-flex c-customers__item flex-column items-center">
-					<img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/customer-1.png" alt="">
-					<img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/customer-2.png" alt="">
-				</div>
+					<a href="#" class="d-flex"><img class="w-100"
+													src="<?php echo get_template_directory_uri(); ?>/assets/images/customer-1.png"
+													alt="">
+					</a><a href="#" class="d-flex"><img class="w-100"
+														src="<?php echo get_template_directory_uri(); ?>/assets/images/customer-2.png"
+														alt="">
+
+					</a></div>
 
 				<div class="items-center content-center d-flex c-customers__item flex-column items-center">
-					<img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/customer-3.png" alt="">
-					<img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/customer-4.png" alt="">
+					<a href="#" class="d-flex"><img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/customer-3.png"
+						 alt=""></a>
+					<a href="#" class="d-flex"><img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/customer-4.png"
+						 alt=""></a>
 				</div>
 				<div class="items-center content-center d-flex c-customers__item flex-column items-center">
-					<img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/customer-5.png" alt="">
-					<img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/customer-6.png" alt="">
+					<a href="#" class="d-flex"><img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/customer-5.png"
+						 alt=""></a>
+					<a href="#" class="d-flex"><img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/customer-6.png"
+						 alt=""></a>
 				</div>
 				<div class="items-center content-center d-flex c-customers__item flex-column items-center">
-					<img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/customer-7.png" alt="">
-					<img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/customer-8.png" alt="">
+					<a href="#" class="d-flex"><img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/customer-7.png"
+						 alt=""></a>
+					<a href="#" class="d-flex"><img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/customer-8.png"
+						 alt=""></a>
 				</div>
 				<div class="items-center content-center d-flex c-customers__item flex-column items-center">
-					<img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/customer-9.png" alt="">
-					<img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/customer-10.png" alt="">
+					<a href="#" class="d-flex"><img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/customer-9.png"
+						 alt=""></a>
+					<a href="#" class="d-flex"><img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/customer-10.png"
+						 alt=""></a>
 				</div>
 			</div>
 			<div class="c-customers__desc">
@@ -45,9 +59,9 @@
 				</div>
 				<div class="more-btn">
 
-				<button class="c-customers-btn d-flex items-center" id="c-customersBtn">مشاهده بیشتـــر</button>
+					<button class="c-customers-btn d-flex items-center" id="c-customersBtn">مشاهده بیشتـــر</button>
 				</div>
 			</div>
 		</div>
-		</div>
-	</section>
+	</div>
+</section>

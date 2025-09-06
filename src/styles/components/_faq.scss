@@ -58,7 +58,7 @@ border: 2px solid #960096;
 		@include font-size(20px,1.6);
 		font-weight: 700;
 	}
-	li{
+	li a{
 		background: linear-gradient(270deg, #960096 0%, #492464 100%);
 		border-radius: 8px;
 		padding: 18px;
@@ -79,7 +79,7 @@ border: 2px solid #960096;
 		ul{
 			gap: 30px;
 		}
-		li{
+		li a{
 			padding: 14px;
 			width: 36px;
 			height: 36px;

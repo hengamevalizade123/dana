@@ -86,6 +86,7 @@
 .employer-carousel, .students-carousel {
 	padding: 18px 24px;
 	border-radius: 8px;
+	height: 260px;
 	@include mq($until: md) {
 		height: 450px;
 	}

@@ -14,8 +14,36 @@
 			padding: 28px 40px;
 			display: flex;
 			flex-direction: column;
-			gap: 26px;
-			justify-content: space-between;
+			gap: 36px;
+			justify-content: center;
+			transition: transform 0.4s ease;
+			cursor: pointer;
+			height: 140px;
+
+			.flip-text {
+				display: none;
+			}
+
+			&.flip {
+				transform: rotateY(180deg);
+				border: 1px solid #492464;
+				background: var(--color-white);
+				color: #492464;
+
+				a {
+					display: none;
+				}
+
+				@include mq($from: md) {
+					.flip-text, h3 {
+						transform: rotateY(180deg);
+					}
+				}
+
+				.flip-text {
+					display: block;
+				}
+			}
 
 			h3 {
 				@include font-size(28px, 1);
@@ -74,8 +102,8 @@
 			}
 		}
 		@include mq($until: md) {
-			a{
-				padding:12px 28px;
+			a {
+				padding: 12px 28px;
 			}
 		}
 	}

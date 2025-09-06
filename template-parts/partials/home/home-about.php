@@ -19,8 +19,31 @@
 				</a>
 			</div>
 			<div class="c-home-about__media">
-				<img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/about-video.png" alt="">
+				<div class="video-container">
+					<video id="myVideo" poster="<?php echo get_template_directory_uri(); ?>/assets/images/poster-video.png">
+						<source src="https://mammutco-panel.com/wp-content/themes/SandwichPanel-Mammut/assets/video/video_mammut.mp4" type="video/mp4">
+						مرورگر شما از ویدیو پشتیبانی نمی‌کند.
+					</video>
+					<button class="btn-center">
+						<!-- Play SVG -->
+						<svg class="icon-play" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M23.8205 45H21.1837C21.071 44.9753 20.9583 44.9354 20.8444 44.9272C17.6898 44.7135 14.7008 43.8812 11.9384 42.355C5.60233 38.8541 1.72109 33.5382 0.354548 26.4167C0.190188 25.5597 0.116226 24.6851 0 23.8187C0 22.9393 0 22.0612 0 21.1819C0.025828 21.0551 0.065744 20.9295 0.0751361 20.8015C0.294674 17.6622 1.10826 14.6779 2.64855 11.939C6.79277 4.5721 13.1124 0.549972 21.5582 0.0404553C25.9924 -0.227217 30.1812 0.835254 33.9685 3.17269C40.7965 7.38501 44.4911 13.5462 44.9701 21.5552C45.2131 25.6137 44.3256 29.4832 42.3638 33.051C38.8735 39.3965 33.5483 43.2742 26.4244 44.6443C25.5662 44.8098 24.6904 44.8838 23.8217 45H23.8205ZM16.0768 22.5026C16.0768 24.5806 16.0721 26.6598 16.0779 28.7377C16.0815 30.2088 17.2519 30.9449 18.5633 30.2921C22.724 28.22 26.8799 26.1385 31.0371 24.0593C31.6792 23.7377 32.1395 23.2657 32.1383 22.5038C32.1371 21.7477 31.7004 21.277 31.0429 20.9494C26.8952 18.8855 22.7521 16.8099 18.6056 14.7436C17.2332 14.0592 16.0779 14.7777 16.0756 16.3098C16.0721 18.3737 16.0756 20.4375 16.0756 22.5014L16.0768 22.5026Z" fill="white"/>
+						</svg>
+
+						<!-- Pause SVG -->
+						<svg class="icon-pause" style="display:none" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="20" cy="20" r="20" fill="white"/>
+							<path d="M17.0207 10.666V29.6593H13.334V10.666H17.0207ZM26.4473 10.666V29.6593H22.8073V10.666H26.4473Z" fill="#492464"/>
+						</svg>
+
+					</button>
+
+					<!-- دکمه Fullscreen -->
+					<button class="btn-fullscreen">⛶</button>
+				</div>
 			</div>
+
+
 		</div>
 	</div>
 </section>
